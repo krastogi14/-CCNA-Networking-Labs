@@ -2,17 +2,18 @@
 
 ## Overview
 
-This folder contains Cisco Packet Tracer labs demonstrating routing concepts used to enable communication between multiple networks. The labs focus on configuring routers, implementing routing protocols, and verifying end-to-end connectivity.
+This folder contains Cisco Packet Tracer labs demonstrating fundamental routing concepts used to establish communication between multiple networks. The labs cover static routing, Routing Information Protocol (RIP), and Open Shortest Path First (OSPF), providing practical experience in configuring routers, implementing routing protocols, and verifying network connectivity.
 
 ---
 
 ## Objectives
 
 - Configure router interfaces with appropriate IP addressing.
-- Implement static and dynamic routing techniques.
-- Configure Open Shortest Path First (OSPF).
-- Verify communication between different networks.
-- Understand packet forwarding and route selection.
+- Implement static routing between multiple networks.
+- Configure and verify RIP Version 2.
+- Configure and verify OSPF routing.
+- Understand route selection and packet forwarding.
+- Verify end-to-end communication between different networks.
 
 ---
 
@@ -21,8 +22,8 @@ This folder contains Cisco Packet Tracer labs demonstrating routing concepts use
 | Lab | Description |
 |------|-------------|
 | Static Routing | Configure manual routes between multiple networks. |
-| Dynamic Routing | Configure routers to exchange routing information dynamically. |
-| OSPF | Configure and verify OSPF routing between routers. |
+| RIP (Dynamic Routing) | Configure routers to exchange routing information automatically using RIP Version 2. |
+| OSPF | Configure and verify Open Shortest Path First (OSPF) routing between routers. |
 
 ---
 
@@ -37,38 +38,41 @@ This folder contains Cisco Packet Tracer labs demonstrating routing concepts use
 
 ### Static Routing
 
-- Configured router interfaces with appropriate IP addresses and subnet masks.
+- Configured router interfaces with IP addresses and subnet masks.
 - Assigned default gateways for connected networks.
 - Added static routes to enable communication between remote networks.
-- Verified routing tables using Cisco IOS verification commands.
+- Verified routing table entries.
 - Tested end-to-end connectivity using ICMP (ping).
 
-### Dynamic Routing
+### RIP (Dynamic Routing)
 
 - Configured router interfaces with IP addressing.
-- Enabled the dynamic routing protocol on participating routers.
+- Enabled RIP Version 2.
 - Advertised directly connected networks.
-- Verified automatic route learning between routers.
-- Validated network connectivity across multiple subnets.
+- Disabled automatic route summarization where required.
+- Verified dynamically learned routes using the routing table.
+- Tested communication between multiple networks.
 
 ### OSPF
 
+- Configured router interfaces with IP addresses.
 - Enabled the OSPF routing process.
-- Assigned a Router ID.
+- Assigned unique Router IDs.
 - Advertised participating networks using OSPF network statements.
 - Established OSPF neighbor relationships.
-- Verified OSPF routes and neighbor status.
-- Tested communication between all configured networks.
+- Verified OSPF routing tables and neighbor status.
+- Validated end-to-end connectivity between networks.
 
 ---
 
 ## Concepts Demonstrated
 
-- IP Addressing
 - Router Configuration
+- IP Addressing
 - Static Routing
-- Dynamic Routing
+- RIP Version 2
 - OSPF
+- Route Advertisement
 - Routing Table Verification
 - End-to-End Connectivity Testing
 
@@ -76,10 +80,11 @@ This folder contains Cisco Packet Tracer labs demonstrating routing concepts use
 
 ## Outcome
 
-Successfully configured routers to establish communication between multiple networks using static and dynamic routing techniques. Verified routing table entries, OSPF neighbor relationships, and end-to-end connectivity through network testing.
+Successfully configured routers to establish communication between multiple networks using static routing, RIP Version 2, and OSPF. Verified routing information, protocol operation, and end-to-end connectivity through network testing and routing table verification.
 
 ---
 
 ## Software
 
 - Cisco Packet Tracer
+- Cisco IOS
